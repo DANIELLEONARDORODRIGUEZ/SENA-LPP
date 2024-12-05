@@ -1,0 +1,95 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+31
+'Ingresse si es hombre o mujer'
+5
+1
+4
+sexo
+7
+0
+1
+13
+sexo='hombre'
+4
+1
+11
+'Es mujer?'
+5
+1
+4
+sexo
+7
+0
+1
+9
+sexo='si'
+4
+1
+20
+'Genero no definido'
+13
+4
+1
+34
+'Puede ingresar albaño de mujeres'
+13
+13
+4
+1
+35
+'Puede ingresar al baño de hombres'
+4
+1
+19
+'Es nino o adulto?'
+5
+1
+5
+rango
+7
+0
+1
+12
+rango='nino'
+4
+1
+33
+'Ingrese al sanitario de adultos'
+13
+4
+1
+33
+'Ingrese al sanitario para niños'
+4
+1
+17
+'Ingrese su edad'
+5
+1
+4
+edad
+7
+0
+1
+7
+edad< 5
+4
+1
+28
+'El niño debe ingresar solo'
+13
+4
+1
+39
+'Puede ingresar con acompañante adulto'
+13
+13
+13
+1

@@ -1,0 +1,701 @@
+entero opcion, edad, nacimiento, year, mes, dia, yearact, mesact, diaact, diavida
+real base, altura, areatriangulo, perimetrorectangulo, num1, num2, num3, suma3, lado, perimetro, suma, resta, multiplicacion, division
+real productoNeto, iva, valor, numero, porcentaje, hombre, mujer, nino, porcentajeh, porcentajem, porcentajen, total
+cadena [100] nombre ,telefono ,direccion
+
+
+arreglo [6,6] de entero mat
+entero i, j, ciclo, codigo, contador, N, opcion35
+real N1, N2, N3, N4, N5, promedio
+cadena [30] Nonmbre
+arreglo [25] de cadena [30 ]nombreV
+arreglo [25] de cadena [30]tipoM
+arreglo [25] de real precio
+arreglo [25] de entero cantidad
+arreglo [25] de real venta
+arreglo [31] de real totalV
+entero dias
+real gran_total, hora
+
+
+//PROCESOS
+ procedimiento GenerarTitulo(Cadena[100] pTitulo)
+inicio
+ 	llamar nueva_linea
+	escriba "****************************************************"
+	llamar nueva_linea
+	escriba "    	   " + pTitulo
+	llamar nueva_linea
+	escriba "****************************************************"
+	llamar nueva_linea
+fin
+
+ procedimiento MENU(entero opcion)
+inicio
+	llamar GenerarTitulo("MENU")
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "******BASICAS******"
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "1. Area triangulo "
+	llamar nueva_linea
+	escriba "2. Perimetro rectangulo "
+	llamar nueva_linea
+	escriba "3. Suma de 3 numeros "
+	llamar nueva_linea
+	escriba "4. Dias de la semana "
+	llamar nueva_linea
+	escriba "5. Calcular edad "
+	llamar nueva_linea
+	escriba "6. Dias vividos "
+	llamar nueva_linea
+	escriba "7. Nombre, telefono y direccion "
+	llamar nueva_linea
+	escriba "8. Perimetro Cuadrado "
+	llamar nueva_linea
+	escriba "9. Suma, resta, multiplicacion y division de dos numeros "
+	llamar nueva_linea
+	escriba "10. Calcular IVA 16% "
+	llamar nueva_linea
+	escriba "11. Calcular el 20% "
+	llamar nueva_linea
+	escriba "12. Porcentaje de hombres y mujeres "
+	llamar nueva_linea
+	escriba "13. Porcentaje de hombres, mujeres y niños "
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "******CONDICIONALES******"
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "14.  Numero mayor y Numero menor"
+	llamar nueva_linea
+	escriba "15.  Numeros mayores de 20 les sume 10"
+	llamar nueva_linea
+	escriba "16.  Numeros mayores de 20 y menores de 40 les sume 15"
+	llamar nueva_linea
+	escriba "17.  Nota de un estudiante "
+	llamar nueva_linea
+	escriba "18.  Dos numeros son iguales o son diferentes"
+	llamar nueva_linea
+	escriba "19.  Papeleria calcula fotocopias"
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "******ESTRUCTURA ITERATIVAS******"
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "20. Numeros del 1 al 100 con su cuadrado "
+	llamar nueva_linea
+	escriba "21. Numeros impares desde 1 hasta 999 y Numeros pares desde 2 hasta 1000"
+	llamar nueva_linea
+	escriba "22. N numeros en descenso hasta 50"
+	llamar nueva_linea
+	escriba "23. 100 primeros números de Fibonacci "
+	llamar nueva_linea
+	escriba "24. Numeros de 1 a N con su factorial"
+	llamar nueva_linea
+	escriba "25. Calcula el factorial de N numero "
+	llamar nueva_linea
+	escriba "26. 20 números y encontrar el mayor y el menor valor leídos"
+	llamar nueva_linea
+	escriba "27. Elevacion de 2 a la potencia N"
+	llamar nueva_linea
+	escriba "28. Calcular valor de X elevado a la N"
+	llamar nueva_linea
+	escriba "29. Mientras, Repetir, Para, Si, Caso"
+	llamar nueva_linea
+	escriba "30. Investigar sobre parámetros de referencia y de valor"
+	llamar nueva_linea
+	escriba "31. Investigar sobre el concepto de subprograma o función"
+	llamar nueva_linea
+	escriba "32. Ejercio 5 y 4 "
+	llamar nueva_linea
+	escriba "33. MATRIZ "
+	llamar nueva_linea
+	escriba "34. MENU PROMEDIO"
+	llamar nueva_linea
+	escriba "35. MENU PROMEDIO"
+	llamar nueva_linea	
+	escriba "36. Tienda ventas"
+	llamar nueva_linea
+	escriba "0. Salir "
+	llamar nueva_linea
+	escriba "Digite en numero la opcion a escoger: "
+	lea opcion
+	
+fin
+ procedimiento CasoMenu (entero opcion)
+inicio
+	caso opcion
+		1:	escriba "1. Area triangulo "
+			llamar AreaTriangulo()
+		2:	escriba "2. Perimetro rectangulo "
+			llamar PerimetroRectangulo()
+		3:	escriba "3. Suma de 3 numeros "
+			llamar Suma3Numeros()
+		4:	escriba "4. Dias de la semana "
+			llamar DiasSemana()
+		5:	escriba "5. Calcular edad "
+			llamar CalcularEdad()
+		6:	escriba "6. Dias vividos "
+			llamar DiasVividos ()
+		7:	escriba "7. Nombre, telefono y direccion "
+			llamar DatosBasicos ()
+		8:	escriba "8. Perimetro Cuadrado "
+			llamar PerimetroCuadrado ()
+		9:	escriba "9. Suma, resta, multiplicacion y division de dos numeros "
+			llamar SumRestMultDiv ()
+		10:	escriba "10. Calcular IVA 16% "
+			llamar IVA16 ()
+		11:	escriba "11. Calcular el 20% "
+			llamar porcentaje ()
+		12:	escriba "12. Porcentaje de hombres y mujeres "
+			llamar PorcentajePersonas ()
+		13:	escriba "13. Porcentaje de hombres, mujeres y niños "
+			llamar PorcentajeHomMujNin ()
+		14:	escriba "14. Numero mayor y Numero menor"
+			llamar NumeroMayorYMenor ()
+		15:	escriba "15.  "
+			llamar NumeroMayorYMenor ()
+		16:	escriba "16.  "
+			llamar NumeroMayorYMenor ()
+		17:	escriba "17.  "
+			llamar NumeroMayorYMenor ()
+		18:	escriba "18.  "
+			llamar NumeroMayorYMenor ()
+		19:	escriba "19.  "
+			llamar NumeroMayorYMenor ()
+		20:	escriba "20.  "
+			llamar NumeroMayorYMenor ()
+		21:	escriba "21.  "
+			llamar NumeroMayorYMenor ()
+		22:	escriba "22.  "
+			llamar NumeroMayorYMenor ()
+		23:	escriba "23.  "
+			llamar NumeroMayorYMenor ()
+		24:	escriba "24.  "
+			llamar NumeroMayorYMenor ()
+		25:	escriba "25.  "
+			llamar NumeroMayorYMenor ()
+		26:	escriba "26.  "
+			llamar NumeroMayorYMenor ()
+		27:	escriba "27.  "
+			llamar NumeroMayorYMenor ()
+		28:	escriba "28.  "
+			llamar NumeroMayorYMenor ()
+		29:	escriba "29.  "
+			llamar NumeroMayorYMenor ()
+		30:	escriba "30.  "
+			llamar NumeroMayorYMenor ()
+		31:	escriba "31.  "
+			llamar NumeroMayorYMenor ()
+		32:	escriba "32.  "
+			llamar NumeroMayorYMenor ()
+		33:	escriba "33. MATRIZ "
+			llamar matriz ()
+		34:	escriba "34. MENU PROMEDIO "
+			llamar menupromedio ()
+		35:	escriba "35. MENU PROMEDIO"
+			llamar menupromedio ()
+		36:	escriba "36. Ventas"
+			llamar ventas_almacen ()
+		0: llamar GenerarTitulo("SALIR")
+	sino : escriba "OPCION NO VALIDA!!"
+	fin caso	
+fin	
+
+ procedimiento DiasSemana (cadena[100] Sdias)
+inicio
+	llamar GenerarTitulo ("DIAS DE LA SEMANA")
+	llamar nueva_linea
+	escriba "    	  lunes"
+	escriba "    	  martes"
+	escriba "    	  miercoles"
+	escriba "    	  jueves"
+	escriba "    	  viernes"
+	escriba "    	  sabado"
+	escriba "    	  domingo"
+	llamar nueva_linea
+fin
+
+ procedimiento DatosBasicos (cadena [150] nombre, cadena [10] telefono, cadena [50] direccion)
+inicio
+llamar GenerarTitulo ("INFORMACION BASICA")
+	llamar nueva_linea
+	escriba "Ingrese su nombre: "
+	lea nombre
+	llamar nueva_linea
+	escriba "Ingrese su numero de telefono: "
+	lea telefono
+	escriba "Ingrese su direccion: "
+	lea direccion
+	llamar nueva_linea
+	escriba nombre," ",telefono," ",direccion	
+fin
+ procedimiento NumeroMayorYMenor (real n1)
+inicio
+	
+	n1<-20
+	n2<-30
+	n3<-10
+
+	si (n1<n2)y(n2<n3) entonces
+		llamar nueva_linea
+		escriba "El numero mayor es: ",n3
+		llamar nueva_linea
+		escriba "El numero medio es: ",n2
+		llamar nueva_linea
+		escriba "El numero menor es: ",n1
+	sino
+		si (n1>n2)y(n2>n3) entonces
+			llamar nueva_linea
+			escriba "El numero mayor es: ",n1
+			llamar nueva_linea
+			escriba "El numero medio es: ",n2
+			llamar nueva_linea
+			escriba "El numero menor es: ",n3
+		sino
+			si (n1>n2)y(n2<n3) entonces
+				llamar nueva_linea
+				escriba "El numero mayor es: ",n3
+				llamar nueva_linea
+				escriba "El numero medio es: ",n2
+				llamar nueva_linea
+				escriba "El numero medio es: ",n1
+			sino
+				si (n1<n2)y(n2>n3)y(n1<n3) entonces
+					llamar nueva_linea
+					escriba "El numero mayor es: ",n2
+					llamar nueva_linea
+					escriba "El numero medio es: ",n3
+					llamar nueva_linea
+					escriba "El numero menor es: ",n1
+				sino
+				
+				fin si
+			fin si
+		fin si
+	fin si
+fin
+//OPERACIONES
+ funcion AreaTriangulo (real base, real altura) : real
+inicio
+	llamar GenerarTitulo ("AREA DE UN TRIANGULO")
+	llamar nueva_linea
+	escriba "Ingresar la medida de la base en numeros: "
+	lea base
+	llamar nueva_linea
+	escriba "Ingresar la medida de la altura en numeros: "
+	lea altura
+	areatriangulo <- (base*altura)/2
+	llamar nueva_linea
+	escriba "El area es: ",Areatriangulo,"cm."
+	llamar nueva_linea
+fin
+
+ funcion PerimetroRectangulo (real base, real altura) : real
+inicio
+	llamar GenerarTitulo ("PERIMETRO DE UN RECTANGULO")
+	llamar nueva_linea
+	escriba "Ingresar la medida de la base en numeros: "
+	lea base
+	llamar nueva_linea
+	escriba "Ingresar la medida de la altura en numeros: "
+	lea altura
+	perimetrorectangulo <- 2*(base+altura)
+	llamar nueva_linea
+	escriba "El perimetro es: ",perimetrorectangulo,"cm."
+	llamar nueva_linea
+fin	
+
+ funcion Suma3Numeros (real num1, real num2, real num3) : real
+inicio
+	llamar GenerarTitulo ("SUMA DE 3 NUMEROS")
+	llamar nueva_linea
+	escriba "Ingresar el primer numero: "
+	lea num1
+	llamar nueva_linea
+	escriba "Ingresar el segundo numero: "
+	lea num2
+	llamar nueva_linea
+	escriba "Ingresar el tercer numero: "
+	lea num3
+	suma3 <- num1+num2+num3
+	llamar nueva_linea
+	escriba "El resultado de la suma es: ",suma3
+	llamar nueva_linea
+fin
+
+ funcion CalcularEdad (entero nacimiento) : entero
+inicio
+	llamar GenerarTitulo ("CALCULAR EDAD")
+	llamar nueva_linea
+	escriba "Ingresar su año de nacimiento en numeros: "
+	lea nacimiento
+	llamar nueva_linea
+	edad <- 2024-nacimiento
+	llamar nueva_linea
+	escriba "Su edad es: ",edad," años."
+	llamar nueva_linea
+fin
+
+ funcion DiasVividos (entero year, entero mes, entero dia, entero yearact, entero mesact, entero diaact, entero edad, entero diavida) : entero
+inicio
+	llamar GenerarTitulo ("DIAS VIVIDOS")
+	llamar nueva_linea
+	escriba "Ingresar su año de nacimiento en numeros: "
+	lea year
+	llamar nueva_linea
+	escriba "Ingresar su mes de nacimiento en numeros: "
+	lea mes
+	llamar nueva_linea
+	escriba "Ingresar su dia de nacimiento en numeros: "
+	lea dia
+	llamar nueva_linea
+	escriba "Ingresar el año actual en numeros: "
+	lea yearact
+	llamar nueva_linea
+	escriba "Ingresar el mes actual en numeros: "
+	lea mesact
+	llamar nueva_linea
+	escriba "Ingresar el dia actial en numeros: "
+	lea diaact
+	llamar nueva_linea
+	edad <- yearact - year
+	diavida <- diaact+(mesact*30)+(edad*365)
+	escriba "Sus dias vividos son: ",diavida,"."
+	llamar nueva_linea
+fin
+
+ funcion PerimetroCuadrado (real lado) : real
+inicio
+	llamar GenerarTitulo ("PERIMETRO DE CUADRADO")
+	llamar nueva_linea
+	escriba "Ingrese la medida del lado: "
+	lea lado
+	perimetro <- lado * 4
+	llamar nueva_linea
+	escriba " El perimetro del cuadrado es: ",perimetro,"."
+	llamar nueva_linea
+fin
+
+ funcion Suma (real num1, real num2) : real
+inicio
+	llamar GenerarTitulo ("SUMA")
+	llamar nueva_linea
+	suma <- num1 +num2
+	escriba "La suma de los numeros es: ",suma,"."
+	llamar nueva_linea
+fin
+
+ funcion Resta (real num1, real num2) : real
+inicio
+	llamar GenerarTitulo ("RESTA")
+	llamar nueva_linea
+	resta <- num1 - num2
+	escriba "La resta de los numeros es: ",resta,"."
+	llamar nueva_linea
+fin
+
+ funcion Mult (real num1, real num2) : real
+inicio
+	llamar GenerarTitulo ("MULTIPLICACION")
+	llamar nueva_linea
+	multiplicacion <- num1 * num2
+	escriba "La multiplicacion de los numeros es: ",multiplicacion,"."
+	llamar nueva_linea
+fin
+
+ funcion Division (real num1, real num2) : real
+inicio
+	llamar GenerarTitulo ("DIVISION")
+	llamar nueva_linea
+	division <- num1 / num2
+	escriba "La division de los numeros es: ",division,"."
+	llamar nueva_linea
+fin
+ funcion SumRestMultDiv (real num1, real num2) : real
+inicio
+	llamar GenerarTitulo("SUMA, RESTA, MULTIPLICACION Y DIVISION DE DOS NUMEROS")
+	llamar nueva_linea
+	escriba "Ingrese el primer numero: "
+	lea num1
+	llamar nueva_linea
+	escriba "Ingrese el egundo numero: "
+	lea num2
+	llamar nueva_linea
+	llamar Suma (num1, num2)
+	llamar Resta (num1, num2)
+	llamar Mult (num1, num2)
+	llamar Division (num1, num2)
+fin
+ funcion IVA16 (real productoNeto, real iva, real valor  ): real
+inicio
+	llamar GenerarTitulo ("CALCULAR EL IVA 16%")
+	llamar nueva_linea
+	escriba "Ingrese el valor del producto: "
+	lea productoNeto
+	iva <- (productoNeto * 16)/100
+	valor <- productoNeto + iva
+	llamar nueva_linea
+	escriba "El valor del producto es: ",productoNeto
+	llamar nueva_linea
+	escriba "El valor del IVA 16% de este producto es: ",iva
+	llamar nueva_linea
+	escriba " El total de valor con IVA es: ",valor
+fin
+ funcion porcentaje (real numero, real porcentaje) : real
+inicio
+	llamar GenerarTitulo ("CALCULAR EL 20% DE CUALQUIER NUMERO")
+	llamar nueva_linea
+	escriba "Ingresar un numero cualquiera: "
+	lea numero
+	porcentaje <- (numero * 20)/100
+	llamar nueva_linea
+	escriba " El 20% de ",numero," es: ",porcentaje	
+fin
+ funcion PorcentajePersonas (real hombre, real mujer) : real
+inicio
+	llamar GenerarTitulo ("CALCULO PORCENTAJE DE HOMBRES Y MUJERES")
+	llamar nueva_linea
+	escriba "Ingrese la cantidad de hombres que hay en numero: "
+	lea hombre
+	llamar nueva_linea
+	escriba "Ingrese la cantidad de mujeres que hay en numero: "
+	lea mujer
+	total <- hombre+mujer
+	porcentajeh <- (hombre *100)/total
+	porcentajem <- (mujer *100)/total
+	llamar nueva_linea
+	escriba "son ",hombre," hombres y equivalen a: ",porcentajeh,"%"
+	llamar nueva_linea
+	escriba "son ",mujer," mujeres y equivalen a: ",porcentajem,"%"
+	llamar nueva_linea
+fin
+ funcion PorcentajeHomMujNin (real hombre, real mujer, real nino, real total) : real
+inicio
+	llamar GenerarTitulo ("PORCENTAJE DE HOMBRES, MUJERES Y NIÑOS")
+	llamar nueva_linea
+	escriba "Ingrese la cantidad de personas que hay en numero: "
+	lea total
+	llamar nueva_linea
+	escriba "Ingrese la cantidad de hombres que hay en numero: "
+	lea hombre
+	llamar nueva_linea
+	escriba "Ingrese la cantidad de mujeres que hay en numero: "
+	lea mujer
+	escriba "Ingrese la cantidad de mujeres que hay en numero: "
+	lea nino	
+	porcentajeh <- (hombre *100)/total
+	porcentajem <- (mujer *100)/total
+	porcentajen <- (nino *100)/total	
+	llamar nueva_linea
+	escriba "son ",hombre," hombres y equivalen a: ",porcentajeh,"%"
+	llamar nueva_linea
+	escriba "son ",mujer," mujeres y equivalen a: ",porcentajem,"%"
+	llamar nueva_linea	
+	escriba "son ",nino," niños y equivalen a: ",porcentajen,"%"
+	llamar nueva_linea
+fin
+
+//pseint
+ procedimiento matriz (entero i, entero j)
+
+inicio
+	llamar GenerarTitulo("MATRIZ")
+	llamar inicializar_Aleatorio ()
+	para i <- 1 hasta 5 haga
+		para j <- 1 hasta 5 haga
+			mat[i,j] <- aleatorio()*11
+		fin para
+	fin para
+	para i <- 1 hasta 5 haga
+		escriba mat[i,1]," ",mat[i,2]," ",mat[i,3]," ",mat[i,4]," ",mat[i,5]
+	fin para
+fin
+
+ procedimiento menupromedio (entero opcion35 , entero contador)
+inicio
+	llamar GenerarTitulo ("MENU PROMEDIO")
+	opcion35 <- 0
+	mientras opcion35 <=3 haga
+		escriba "MENU DE OPCIONES"
+		llamar nueva_linea
+		escriba "1. Calcula el promedio de notas de estudiante"
+		llamar nueva_linea
+		escriba "2. Calcular el promedio e imprime Aprobado o Reprobado del curso"
+		llamar nueva_linea
+		escriba "3. Para N estudiantes calcula promedio Aprobado o Reprobado"
+		llamar nueva_linea
+		escriba "4. Opcion para salir"
+		llamar nueva_linea
+		escriba "Digite el numero que desee teniendo en cuenta el menu: "
+		lea opcion35
+		caso opcion35
+			1 :
+				llamar limpiar_pantalla
+				escriba "Digite el codigo y nombre del alumno "
+				lea codigo,Nombre
+				llamar nueva_linea
+				escriba "Introduzca las 5 calificaciones en la misma linea separadas por espacio: "
+				lea N1,N2,N3,N4,N5
+				promedio <- (N1+N2+N3+N4+N5)/5
+				llamar nueva_linea
+				escriba "Registro de calificaciones"
+				llamar nueva_linea
+				escriba "Codigo: ",codigo," Nombre del alumno: ",Nombre
+				llamar nueva_linea
+				escriba "Calificaciones: "
+				llamar nueva_linea
+				escriba " ",N1
+				llamar nueva_linea
+				escriba " ",N2
+				llamar nueva_linea
+				escriba " ",N3
+				llamar nueva_linea
+				escriba " ",N4
+				llamar nueva_linea
+				escriba " ",N5
+				llamar nueva_linea
+				escriba "Nota final ",promedio
+				llamar nueva_linea
+			2:
+				llamar limpiar_pantalla
+				escriba "Digite el codigo y nombre del alumno "
+				lea codigo,Nombre
+				llamar nueva_linea
+				escriba "Introduzca las 5 calificaciones en la misma linea separadas por espacio: "
+				lea N1,N2,N3,N4,N5
+				promedio <- (N1+N2+N3+N4+N5)/5
+				llamar nueva_linea
+				escriba "Registro de calificaciones"
+				llamar nueva_linea
+				escriba "Codigo: ",codigo," Nombre del alumno: ",Nombre
+				llamar nueva_linea
+				escriba "Calificaciones: "
+				llamar nueva_linea
+				escriba " ",N1
+				llamar nueva_linea
+				escriba " ",N2
+				llamar nueva_linea
+				escriba " ",N3
+				llamar nueva_linea
+				escriba " ",N4
+				llamar nueva_linea
+				escriba " ",N5
+				llamar nueva_linea
+				escriba "Nota final ",promedio
+				llamar nueva_linea
+				si promedio >=7 entonces
+					escriba "APROBADO"
+					llamar nueva_linea
+				sino
+					escriba "REPROBADO"
+					llamar nueva_linea
+				fin si
+			3:
+				llamar limpiar_pantalla
+				escriba "¿Cuantos alumnos se van a relacionar? "
+				lea N
+				llamar nueva_linea
+				contador <- 1
+				mientras (contador<=N) haga
+					escriba "Codigo y nombre del alumno: ",contador,":"
+					llamar nueva_linea
+					lea codigo, nombre
+					llamar nueva_linea
+					escriba "Digite las 5 calificaciones: "
+					lea N1,N2,N3,N4,N5
+					promedio <- (n1+n2+n3+n4+n5)/5
+					llamar nueva_linea
+					escriba "Registro de calificaciones"
+					llamar nueva_linea
+					escriba "Codigo: ",codigo," Nombre del alumno: ",Nombre
+					llamar nueva_linea
+					escriba "Calificaciones: "
+					llamar nueva_linea
+					escriba " ",N1
+					llamar nueva_linea
+					escriba " ",N2
+					llamar nueva_linea
+					escriba " ",N3
+					llamar nueva_linea
+					escriba " ",N4
+					llamar nueva_linea
+					escriba " ",N5
+					llamar nueva_linea
+					escriba "Nota final ",promedio
+					llamar nueva_linea
+					si promedio >=6 entonces
+						escriba "APROBADO"
+						llamar nueva_linea
+					sino
+						escriba "REPROBADO"
+						llamar nueva_linea
+					fin si
+					contador <- contador +1
+				fin mientras
+			4:		
+				escriba "SALIR"
+				llamar nueva_linea
+		sino: escriba "Opcion eqquivocada"
+		llamar nueva_linea
+		fin caso
+	fin mientras
+fin
+
+ procedimiento ventas_almacen (entero j, entero i, entero dias )
+inicio
+	llamar GenerarTitulo ("VENTAS ALMACEN")
+	gran_total <- 0
+	escriba "Digite el numero de dias que se efectua la compra "
+	lea dias
+	i <- 1
+	llamar nueva_linea
+	para j <- 1 hasta dias haga
+		totalV[j] <-0
+		hora <- 8
+		escriba "Dias: ",j
+		mientras (hora <= 18) haga
+			llamar nueva_linea
+			escriba "Digite la hora "
+			lea hora 
+			si hora <=18 entonces
+				escriba "Nombre del cliente "
+				lea nombreV[i]
+				llamar nueva_linea
+				escriba "Ingresa el nombre del producto "
+				lea tipoM [i]
+				llamar nueva_linea
+				escriba "Ingresar la cantidad "
+				lea cantidad [i]
+				llamar nueva_linea
+				venta [i] <- precio [i]*cantidad[1]
+				escriba "El comprador: ", nombreV[i]," compro: ", venta[i]," pesos."
+				i <- i+1
+				totalV[j] <- totalV[j] + venta[i-1]
+			sino
+			fin si
+		fin mientras
+		escriba "Lo sentimos, la tienda se cierra, son las 18 horas"
+		llamar nueva_linea
+		escriba "El total de ventas en el dia: ", j, " fue de: ", totalV[j]
+	fin para
+	para j <- 1 hasta dias haga
+		llamar nueva_linea
+		escriba "El total de ventasen el dia: ", j," fue de: ", totalV[j]
+		gran_total <- gran_total + totalV[j]
+	fin para
+	llamar nueva_linea
+	escriba"El total de venta los: ",dias," dias, fueron: ", gran_total, " pesos"
+				
+fin
+//PROGRAMA CENTRAL
+inicio
+	llamar color_texto(6)
+	llamar GenerarTitulo("BIENVENIDO")
+	llamar color_texto(4)
+	llamar MENU()
+	llamar color_texto(5)
+	llamar CasoMenu (opcion)
+fin

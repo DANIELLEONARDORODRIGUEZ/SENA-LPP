@@ -1,0 +1,67 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+27
+'hola, ingresa tu nombre; '
+5
+1
+6
+nombre
+4
+1
+74
+'Hola ',nombre,'. Vamos a hacer unas operaciones, ingresa primer numero; '
+5
+1
+13
+primer_numero
+4
+1
+26
+'Ingresa segundo numero: '
+5
+1
+14
+segundo_numero
+6
+3
+4
+suma
+28
+primer_numero+segundo_numero
+5
+resta
+28
+primer_numero-segundo_numero
+8
+division
+28
+primer_numero/segundo_numero
+6
+1
+14
+multiplicacion
+28
+primer_numero*segundo_numero
+4
+1
+67
+nombre,' la suma de ',primer_numero,' + ',segundo_numero,' = ',suma
+4
+1
+61
+'La resta de ',primer_numero,' - ',segundo_numero,' = ',resta
+4
+1
+79
+'La multiplicacion de ',primer_numero,' * ',segundo_numero,' = ',multiplicacion
+4
+1
+67
+'La division de ',primer_numero,' / ',segundo_numero,' = ',division
+1

@@ -1,0 +1,21 @@
+entero edad
+cadena [25] tdocumento
+
+inicio
+	escriba "Ingrese su edad: "
+	llamar nueva_linea
+	lea edad
+	llamar nueva_linea
+	si edad >= 18 entonces
+		escriba "Bienvenido, puede ingresar a categoria Adulto."
+	sino 
+		si edad >11 entonces
+			escriba "Puede ingresar a categoria Adolecente"
+		sino
+			llamar nueva_linea
+			escriba "No puede ingresar sigue creciendo"
+		fin si
+
+	fin si 
+
+fin

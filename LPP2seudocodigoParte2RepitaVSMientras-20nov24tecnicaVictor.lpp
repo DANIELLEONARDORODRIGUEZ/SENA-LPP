@@ -1,0 +1,12 @@
+entero numero1
+
+
+inicio 
+	numero1 <- 1
+	repita
+	escriba numero1 ," Accion repita  "
+	llamar nueva_linea
+	numero1 <- numero1 + 1 
+	hasta (numero1 > 3)
+
+fin

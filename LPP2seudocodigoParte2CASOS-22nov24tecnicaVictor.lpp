@@ -1,0 +1,34 @@
+entero n
+caracter g
+real h
+cadena [20] leo
+inicio
+	//n <- 2
+	escriba "	MENU	"
+	llamar nueva_linea
+		escriba " OPCION  uno "
+		llamar nueva_linea
+		escriba " OPCION dos "
+		llamar nueva_linea
+		escriba " OPCION tres "
+		llamar nueva_linea
+		escriba " OPCION ocho "
+		llamar nueva_linea
+		escriba " OPCION cinco "
+		llamar nueva_linea
+		escriba " OPCION seis "
+		llamar nueva_linea
+		escriba "CPN OTRA ERRROR "
+		llamar nueva_linea
+	escriba "Ingrese numero de opcion : "
+	lea n
+	caso n
+		1: escriba " uno "
+		2: escriba " dos "
+		3: escriba " tres "
+		4: escriba " ocho "
+		5: escriba " cinco "
+		6: escriba " once "
+	sino : escriba "ERROR"
+	fin caso
+fin

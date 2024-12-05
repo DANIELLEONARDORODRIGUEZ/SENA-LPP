@@ -1,0 +1,25 @@
+cadena [25] nombre
+cadena [10] pelgarto
+real x
+entero edad
+Inicio
+
+
+escriba "Ingresa tu nombre: "
+llamar nueva_linea
+lea nombre
+llamar nueva_linea
+escriba "Ingresa tu edad: "
+llamar nueva_linea
+lea edad
+llamar nueva_linea
+escriba "Hola ",nombre," tienes ",edad ," de edad."
+/*si edad  18,
+escriba "eres menor de edad "
+entonces edad >> 18
+escriba "eres mayor"
+x<-8*5
+llamar nueva_linea
+escriba x*/
+
+Fin

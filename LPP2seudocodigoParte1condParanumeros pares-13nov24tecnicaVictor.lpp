@@ -1,0 +1,18 @@
+entero x
+inicio
+	escriba "Numeros pares del 1 al 10"
+	llamar nueva_linea
+	para x <- 1 hasta 10 haga 
+		x <- x+1
+		escriba "	Voy en: ", x
+		llamar nueva_linea
+	fin para
+	escriba "Numeros impares del 1 al 10"
+	llamar nueva_linea
+	para x <- 1 hasta 10 haga 
+		escriba "	Voy en: ", x
+		llamar nueva_linea
+		x <- x+1
+	fin para
+	
+fin

@@ -1,0 +1,18 @@
+
+entero n1, n2
+caracter polo
+cadena [25] bebe
+real mi_numero, minumero
+booleano  ingreso
+
+
+inicio 
+	escriba "ingrese un numero; "
+	lea n1
+	mientras n1<=10 haga
+		escriba "Voy en ",n1
+		n1 <- n1+1
+		llamar nueva_linea
+	fin mientras
+	escriba "el termino n1 quedo en: ",n1
+fin

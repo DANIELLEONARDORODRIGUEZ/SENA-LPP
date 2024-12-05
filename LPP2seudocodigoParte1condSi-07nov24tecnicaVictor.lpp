@@ -1,0 +1,47 @@
+cadena [20] genero, rango
+entero edad
+booleano pepe
+inicio
+	escriba "Indique si es hombre: si/no "
+	llamar nueva_linea
+	lea genero
+	si genero="si" entonces
+		escriba "Puede ingresar al baño de hombres"
+		llamar nueva_linea
+		escriba "Es mayor de edad? si/no"
+		llamar nueva_linea
+		lea rango
+		si rango="si" entonces
+			llamar nueva_linea
+			escriba	"Puede ingresar al sanitario para adultos."	
+		sino
+			llamar nueva_linea
+			escriba "Ingrese su edad en numeros: "
+			llamar nueva_linea
+			lea edad
+			si edad<5 entonces
+				llamar nueva_linea
+				escriba "Puede ingresar al sanitario para niños"
+				llamar nueva_linea
+				escriba "El niño puede ingresar acompañado de un adulto."			
+			sino
+				llamar nueva_linea
+				escriba "Puede ingresar al sanitario para niños pero sin acompañante."
+			fin si
+		fin si
+		
+	sino
+		escriba "Es mujer?: si/no"
+		llamar nueva_linea
+		lea genero
+		llamar nueva_linea
+		si genero="si" entonces
+			escriba "Puede ingresar al baño de mujeres"
+		sino
+			escriba "Genero sin definicion!!!!"
+		fin si
+	fin si
+	
+	
+	
+fin

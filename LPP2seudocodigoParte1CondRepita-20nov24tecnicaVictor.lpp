@@ -1,0 +1,14 @@
+entero numero1
+inicio
+
+	numero1 <- 1
+	repita
+	
+	escriba "Buena tarde "
+	llamar nueva_linea
+	numero1 <- numero1+1
+	escriba numero1
+	llamar nueva_linea	
+	hasta (numero1 >3)
+	
+fin

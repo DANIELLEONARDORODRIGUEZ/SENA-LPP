@@ -1,0 +1,47 @@
+entero n1, n2, r, p, q, p1, p2
+caracter continuar
+
+inicio
+	
+	llamar inicializar_Aleatorio
+	repita
+	para p <-1 hasta 2 haga
+		p2 <- aleatorio()*3
+		llamar nueva_linea	
+	fin para
+		escriba "Numero de veces a Actuar: ",p2
+		llamar nueva_linea
+		si ( p2 = 0) entonces
+			escriba "El numero generado fue CERO y no es posible con ese numero generar la operacion, Adios. "
+			llamar nueva_linea
+		sino
+			p <- 1
+		mientras ( p <= p2 ) haga
+			escriba "Suma: ", p
+			llamar nueva_linea
+			escriba "Ingrese el primer numero para la suma: "
+			lea n1
+			llamar nueva_linea
+			escriba "Ingrese el segundo numero para la suma: "
+			lea n2
+			llamar nueva_linea
+			r <- n1 + n2
+			escriba "La suma es: ",r
+			llamar nueva_linea
+			llamar nueva_linea
+			p <- p + 1
+			llamar nueva_linea
+		fin mientras
+		fin si
+		llamar nueva_linea
+		escriba "Desea terminar? Ingrese S "
+		llamar nueva_linea
+		
+		lea continuar
+		llamar nueva_linea
+		llamar nueva_linea
+		llamar nueva_linea
+		llamar nueva_linea		
+	hasta (continuar = 'S')
+
+fin

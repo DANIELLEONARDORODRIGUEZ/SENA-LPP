@@ -1,0 +1,69 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+1
+8
+contador
+1
+3
+9
+1
+12
+contador >=0
+4
+1
+21
+'Ingrese su correo: '
+5
+1
+6
+correo
+4
+1
+20
+'Ingrese su clave: '
+5
+1
+5
+clave
+7
+0
+1
+35
+((correo='cosa') and (clave='soy'))
+4
+1
+31
+'Usuario o clave incorrectos. '
+4
+1
+31
+'Tiene ', contador, ' intentos'
+13
+4
+1
+15
+'BIENVENIDO!!!'
+6
+1
+8
+contador
+1
+0
+13
+6
+1
+8
+contador
+11
+contador -1
+11
+4
+1
+16
+'FIN PROGRAMA!!'
+1

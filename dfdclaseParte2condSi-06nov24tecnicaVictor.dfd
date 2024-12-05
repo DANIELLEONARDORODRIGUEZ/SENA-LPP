@@ -1,0 +1,41 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+19
+'Ingrese su edad: '
+5
+1
+4
+edad
+7
+0
+1
+10
+edad >= 18
+7
+0
+1
+9
+edad > 11
+4
+1
+35
+'No puede ingresar sigue creciendo'
+13
+4
+1
+39
+'Puede ingresar a categoria Adolecente'
+13
+13
+4
+1
+48
+'Bienvenido, puede ingresar a categoria Adulto.'
+13
+1

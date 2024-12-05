@@ -1,0 +1,97 @@
+real opcion, res_suma, res_resta, res_mult, res_div, a, b
+procedimiento MENU(real opcion)
+inicio
+	repita
+	escriba " *************** "
+	escriba "BIENVENIDO"
+	escriba " *************** "
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "			"
+	escriba "MENU"
+	escriba "					"
+	llamar nueva_linea
+	llamar nueva_linea
+	escriba "Que operacion quiere hacer?... Selecione con numero la opcion..."
+	llamar nueva_linea
+	escriba "1. SUMA"
+	llamar nueva_linea
+	escriba "2. RESTA"
+	llamar nueva_linea
+	escriba "3. MULTIPLICACION"
+	llamar nueva_linea
+	escriba "4. DIVISION"
+	llamar nueva_linea
+	escriba "0. SALIR"
+	llamar nueva_linea
+	lea opcion
+	hasta (opcion = 0 )
+	llamar nueva_linea
+
+fin
+
+
+procedimiento SUMA (real a, real b)
+inicio
+	escriba "Para sumar debemos ingresar dos numeros: "
+	llamar nueva_linea
+	escriba "Ingrese primer numero: "
+	lea a
+	llamar nueva_linea
+	escriba "Ingrese segundo numero: "
+	lea b
+	res_suma <- a+b
+	llamar nueva_linea
+	escriba "La suma de ",a,"+",b,"=",res_suma
+	llamar nueva_linea
+fin
+
+procedimiento RESTA (real a, real b)
+inicio
+	escriba "Para restar debemos ingresar dos numeros: "
+	llamar nueva_linea
+	escriba "Ingrese primer numero: "
+	lea a
+	llamar nueva_linea
+	escriba "Ingrese segundo numero: "
+	lea b
+	res_suma <- a-b
+	llamar nueva_linea
+	escriba "La resta de ",a,"-",b,"=",res_resta
+	llamar nueva_linea
+fin
+
+procedimiento MULTIPLICACION (real a, real b)
+inicio
+	escriba "Para multiplicar debemos ingresar dos numeros: "
+	llamar nueva_linea
+	escriba "Ingrese primer numero: "
+	lea a
+	llamar nueva_linea
+	escriba "Ingrese segundo numero: "
+	lea b
+	res_mult <- a*b
+	llamar nueva_linea
+	escriba "La multiplicacion de ",a,"*",b,"=",res_mult
+	llamar nueva_linea
+fin
+
+procedimiento DIVISION (real a, real b)
+inicio
+	escriba "Para dividir debemos ingresar dos numeros: "
+	llamar nueva_linea
+	escriba "Ingrese primer numero: "
+	lea a
+	llamar nueva_linea
+	escriba "Ingrese segundo numero: "
+	lea b
+	res_div <- a/b
+	llamar nueva_linea
+	escriba "La division de ",a,"/",b,"=",res_div
+	llamar nueva_linea
+fin
+
+
+inicio
+	llamar MENU()
+fin

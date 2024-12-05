@@ -1,0 +1,13 @@
+entero x,b
+
+
+inicio
+	escriba "Ingrese que tabla ver: "
+	lea x
+	b<-0
+	mientras (b<10) haga
+		b<-b+1
+		escriba x,"x",b,"=",x*b
+		llamar nueva_linea
+	fin mientras
+fin

@@ -1,0 +1,20 @@
+entero n
+cadena [20] x, l
+
+inicio
+	x <- "Rocio Pinilla"
+	n <- longitud(x)
+	escriba "La longitud de la cadena -[",x,"]- es: ",n
+
+	llamar nueva_linea
+	escriba "Ingrese su nombre y apellido: "
+	lea l
+	llamar nueva_linea
+	escriba "Vamos a contar los caracteres de su nombre."
+	n <- longitud(l)
+	llamar nueva_linea
+	escriba "La longitud es: ",n
+	llamar nueva_linea
+	escriba l
+
+fin

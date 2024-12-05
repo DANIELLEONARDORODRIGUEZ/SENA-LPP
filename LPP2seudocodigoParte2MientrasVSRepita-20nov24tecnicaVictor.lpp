@@ -1,0 +1,11 @@
+entero numero1
+
+inicio
+	numero1 <- 1
+	mientras (numero1 <= 3 ) haga
+	escriba numero1 ," Accion mientras  "
+	llamar nueva_linea
+	numero1 <- numero1 + 1
+	fin mientras
+
+fin

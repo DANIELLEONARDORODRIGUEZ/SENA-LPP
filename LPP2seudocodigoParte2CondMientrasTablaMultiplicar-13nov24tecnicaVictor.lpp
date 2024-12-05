@@ -1,0 +1,8 @@
+real 
+
+inicio
+
+	para x <-1 hasta 10 haga
+		escriba x,"
+
+fin

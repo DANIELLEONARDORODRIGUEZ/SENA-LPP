@@ -1,0 +1,80 @@
+entero piso, oficina, empleado
+
+
+
+procedimiento caso_empleado (entero empleado, entero oficina, entero piso)
+	inicio
+		llamar nueva_linea
+		escriba "Escoja del 1 al 5 el empleado: "
+		lea empleado
+		caso empleado
+			1: 
+				llamar nueva_linea
+				escriba "El empleado ",empleado," apago la luz de la oficina ",oficina," del piso ",piso,"."
+			2: 
+				llamar nueva_linea
+				escriba "El empleado ",empleado," apago la luz de la oficina ",oficina," del piso ",piso,"."
+			3: 
+				llamar nueva_linea
+				escriba "El empleado ",empleado," apago la luz de la oficina ",oficina," del piso ",piso,"."
+			4: 
+				llamar nueva_linea
+				escriba "El empleado ",empleado," apago la luz de la oficina ",oficina," del piso ",piso,"."
+			5: 
+				llamar nueva_linea
+				escriba "El empleado ",empleado," apago la luz de la oficina ",oficina," del piso ",piso,"."
+		sino: 
+			llamar nueva_linea
+			escriba "ERROR SOLO HAY 5 EMPLEADOS!!!"
+		fin caso
+	fin
+	
+	
+procedimiento caso_oficina (entero empleado, entero oficina, entero piso)
+	inicio
+		llamar nueva_linea
+		escriba "Escoja el numero de la oficina del 101 al 105 con la luz encendida: "
+		lea oficina
+		caso oficina
+			101:llamar caso_empleado()
+			102:llamar caso_empleado()
+			103:llamar caso_empleado()
+			104:llamar caso_empleado()
+			105:llamar caso_empleado()
+		sino: 
+			llamar nueva_linea
+			escriba "ERROR OFICINA SOLO HAY DE LA 101 A LA 105!!!"
+		fin caso
+	fin
+	
+	
+procedimiento caso_piso (entero empleado, entero oficina, entero piso)
+	inicio
+		llamar nueva_linea
+		escriba "Escoja el numero del piso 1 al 10 con la luz encendida: "
+		lea piso
+		caso piso
+			1: llamar caso_oficina()
+			2: llamar caso_oficina()
+			3: llamar caso_oficina()
+			4: llamar caso_oficina()
+			5: llamar caso_oficina()
+			6: llamar caso_oficina()
+			7: llamar caso_oficina()
+			8: llamar caso_oficina()
+			9: llamar caso_oficina()
+			10: llamar caso_oficina()
+		sino:
+			llamar nueva_linea
+			escriba "ERROR SOLO HAY DEL PISO 1 AL 10!!!"
+		fin caso
+	
+	fin
+
+
+inicio 
+	llamar nueva_linea
+	escriba "Vamos a apagar la luz de una oficina y piso en especial digite en numero las opciones"
+	llamar nueva_linea
+	llamar caso_piso()
+fin		

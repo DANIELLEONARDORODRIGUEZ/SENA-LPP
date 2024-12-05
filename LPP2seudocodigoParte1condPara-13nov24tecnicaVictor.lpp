@@ -1,0 +1,16 @@
+entero x,h
+inicio
+	para x <- 1 hasta 5 haga
+		llamar nueva_linea
+		escriba "Voy en : ", x
+		llamar nueva_linea
+		para h <- 3 hasta 6 haga
+			escriba "Voy en : ", h
+			llamar  nueva_linea		
+		fin para
+		llamar nueva_linea
+		escriba "Estoy en : ", h
+	fin para
+	llamar nueva_linea
+	escriba "Ahora estoy en : ",x," y ",h
+fin

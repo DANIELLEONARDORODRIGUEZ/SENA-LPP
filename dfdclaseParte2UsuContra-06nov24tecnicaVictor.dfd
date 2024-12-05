@@ -1,0 +1,53 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+33
+'Ingresar Usuario y contraseña: '
+5
+1
+7
+usuario
+5
+1
+5
+clave
+7
+0
+1
+81
+( ( usuario = 'daniel123' ) and ( (clave ="@23Daniel") or (clave = "Ronaldo") ) )
+4
+1
+33
+'contraseña o Usuario incorrecto'
+13
+4
+1
+19
+'Repita su clave: '
+5
+1
+7
+reclave
+7
+0
+1
+15
+reclave = clave
+4
+1
+18
+'Clave incorrecta'
+13
+4
+1
+45
+'Bienvenido, datos correctos, puede ingresar'
+13
+13
+1

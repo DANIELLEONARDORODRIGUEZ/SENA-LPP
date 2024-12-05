@@ -1,0 +1,32 @@
+entero numero1, coco
+cadena [2] entrada
+/*
+inicio
+	numero1 <- 1
+	
+	mientras numero1 <= 5  haga
+ 		escriba "Voy en numero ",numero1
+ 		numero1 <- numero1+1
+ 		llamar nueva_linea
+ 		lea numero1
+ 		lea coco
+	fin mientras
+	llamar nueva_linea
+	escriba  "coco ",coco
+fin
+*/
+inicio
+	lea entrada
+	mientras entrada = "si"  haga
+ 		escriba entrada
+ 		llamar nueva_linea
+ 		escriba "voy","	","Seleccion de vida es si!!"
+ 		llamar nueva_linea
+ 		lea entrada
+	fin mientras
+	llamar nueva_linea
+	
+	escriba entrada
+	llamar nueva_linea
+	escriba "Adios!"
+fin

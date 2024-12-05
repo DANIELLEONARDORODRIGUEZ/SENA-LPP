@@ -1,0 +1,28 @@
+cadena [25] usuario,clave,reclave
+
+inicio
+	escriba "Ingrese su Usuario y contraseña: "
+	llamar nueva_linea
+	lea usuario
+	lea clave
+	llamar nueva_linea
+	si (usuario ="daniel123") y ((clave ="@23Daniel") O (clave = "Ronaldo")) entonces
+		llamar nueva_linea
+		escriba "Repita su clave "
+		lea reclave
+		si reclave = clave entonces
+			llamar nueva_linea
+			escriba "Bienvenido, datos correctos, puede ingresar"
+		sino
+			escriba "Clave incorrecta"
+		fin si
+		
+	sino
+		llamar nueva_linea
+		escriba "contraseña o Usuario incorrecto"
+		
+	fin si
+
+fin
+
+//hay que tabular para aprender las diferencias de acciones o funcion del codigo

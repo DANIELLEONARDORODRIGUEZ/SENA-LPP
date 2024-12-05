@@ -1,0 +1,48 @@
+entero n1, n2, n3, x
+inicio
+	
+	n1<-20
+	n2<-30
+	n3<-10
+
+	si (n1<n2)y(n2<n3) entonces
+		llamar nueva_linea
+		escriba "El numero mayor es: ",n3
+		llamar nueva_linea
+		escriba "El numero medio es: ",n2
+		llamar nueva_linea
+		escriba "El numero menor es: ",n1
+	sino
+		si (n1>n2)y(n2>n3) entonces
+			llamar nueva_linea
+			escriba "El numero mayor es: ",n1
+			llamar nueva_linea
+			escriba "El numero medio es: ",n2
+			llamar nueva_linea
+			escriba "El numero menor es: ",n3
+		sino
+			si (n1>n2)y(n2<n3) entonces
+				llamar nueva_linea
+				escriba "El numero mayor es: ",n3
+				llamar nueva_linea
+				escriba "El numero medio es: ",n2
+				llamar nueva_linea
+				escriba "El numero medio es: ",n1
+			sino
+				si (n1<n2)y(n2>n3)y(n1<n3) entonces
+					llamar nueva_linea
+					escriba "El numero mayor es: ",n2
+					llamar nueva_linea
+					escriba "El numero medio es: ",n3
+					llamar nueva_linea
+					escriba "El numero menor es: ",n1
+				sino
+				
+				fin si
+			fin si
+		fin si
+	fin si
+fin
+
+
+llamar nueva_linea

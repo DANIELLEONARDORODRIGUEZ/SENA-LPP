@@ -1,0 +1,20 @@
+entero e, numero, aleta
+real tango
+inicio
+	llamar inicializar_Aleatorio ()
+	para numero <- 1 hasta 10 haga
+		/*e <- aleatorio()*2
+		llamar nueva_linea
+		escriba "El numero ",numero," generado aleatorio es: ",e*/
+
+		tango <- aleatorio()*11
+		llamar nueva_linea
+		e <- tango
+		escriba "El numero ",numero," generado aleatorio es: ",tango," pero por conversion arimetica queda en: ",e
+		
+		llamar nueva_linea
+		aleta <- aleatorio()*40
+	escriba aleta
+	fin para
+	
+fin

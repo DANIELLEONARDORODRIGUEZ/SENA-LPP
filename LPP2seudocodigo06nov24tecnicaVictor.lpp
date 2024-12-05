@@ -1,0 +1,25 @@
+cadena [25] nombre
+real primer_numero,segundo_numero,suma,resta,multiplicacion,division
+
+inicio
+escriba "hola, ingresa tu nombre: "
+lea nombre
+escriba "hola ",nombre,". Vamos a hacer unas operaciones, ingresa primer numero: "
+lea primer_numero
+escriba "Ingresa el segundo numero: "
+lea segundo_numero
+suma<- primer_numero+segundo_numero
+resta<- primer_numero-segundo_numero
+multiplicacion<- primer_numero*segundo_numero
+division<- primer_numero/segundo_numero
+escriba nombre," la suma de ",primer_numero,"+",segundo_numero,"=",suma
+llamar nueva_linea
+escriba "La resta de ",primer_numero,"-",segundo_numero,"=",resta
+llamar nueva_linea
+escriba "La multiplicacion de ",primer_numero,"*",segundo_numero,"=",multiplicacion
+llamar nueva_linea
+escriba "La division de ",primer_numero,"/",segundo_numero,"=",division
+
+
+
+fin

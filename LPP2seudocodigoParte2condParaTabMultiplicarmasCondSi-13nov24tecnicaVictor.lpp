@@ -1,0 +1,36 @@
+entero num1,num2,num3,tabla_inicial,tabla_final
+inicio
+	escriba "Escriba el numero inicial de la tabla a ver: "
+	lea tabla_inicial
+	escriba "Escriba hasta que tabla quiere ver: "
+	lea tabla_final
+	llamar nueva_linea
+	si tabla_inicial <= tabla_final entonces
+	
+		para num1 <-tabla_inicial hasta tabla_final haga
+			num3 <- num1*num2
+			para num2 <- 0 hasta 10 haga
+				num3 <- num1*num2
+				escriba num1,'x',num2,'=',num3
+				escriba "	"
+				//llamar nueva_linea
+			
+			fin para
+			llamar nueva_linea
+			llamar nueva_linea
+		fin para
+	sino
+		escriba "El numero de tabla inicial debe ser mayor al numero de tabla final......"
+		llamar nueva_linea
+	fin si
+	
+	escriba "Ingrese el numero de la tabla a observar: "
+	lea num1
+	para num2 <- 1 hasta 10 haga
+		num3 <- num1*num2
+		escriba num1,'x',num2,'=',num3
+		llamar nueva_linea
+		
+	fin para
+
+fin

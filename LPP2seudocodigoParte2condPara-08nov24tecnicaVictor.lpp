@@ -1,0 +1,16 @@
+cadena [20] joropo
+entero numero
+inicio
+	joropo <- "5"
+	para numero <-1 hasta 10 haga
+		escriba "voy en numero ",numero
+		llamar nueva_linea
+		numero <- numero+1
+		
+	fin para
+	numero<-numero+3
+	escriba "voy en numero ",numero," Final."
+	llamar nueva_linea
+	
+	
+fin

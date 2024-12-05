@@ -1,0 +1,34 @@
+cadena [25] correo, clave
+entero contador
+	//correo<-"cosa@mas.com"
+	//clave<-"soy_yo_y_que"
+inicio
+
+	contador <-3
+	mientras (contador>=0) haga
+		
+		llamar nueva_linea
+		escriba "ingrese su correo: "
+		lea correo
+		
+		escriba "Ingrese su clave: "
+		lea clave
+		//si (correo = "cosa@mas.com")y(clave = "soy_yo_y_que")
+		si (correo = "cosa")y(clave = "soy") entonces
+			llamar nueva_linea
+			escriba "BIENVENIDO!!"
+			contador <- 0
+		sino
+			llamar nueva_linea
+			escriba "Usuario o clave incorrectos. "
+			escriba "Tiene ",contador," intentos"
+			llamar nueva_linea
+			llamar nueva_linea
+		fin si
+		contador <- contador-1
+		llamar nueva_linea
+	fin mientras
+	escriba "Fin.."
+fin
+
+
